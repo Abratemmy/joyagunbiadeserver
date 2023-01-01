@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import cors from "cors";
 import gesfeedback from "./routes/gesfeedback.js";
 import gwop from "./routes/gwops.js";
+import blog from "./routes/blog.js";
+import joyevent from "./routes/event.js"
 import dotenv from "dotenv"
 
 
@@ -17,6 +19,8 @@ app.use(cors());
 
 app.use('/gesfeedback', gesfeedback);
 app.use('/gwopfeedback', gwop);
+app.use('/blog', blog);
+app.use('/event', joyevent);
 
 app.get('/', (req, res) => {
     res.send("Hello Joy")

@@ -3,7 +3,7 @@ import { getBlog, getBlogs, createBlog, updateBlog, deleteBlog } from "../contro
 
 const router = express.Router();
 
-router.get('/:topic', getBlog);
+router.get('/:title', getBlog);
 
 
 

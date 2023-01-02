@@ -4,11 +4,10 @@ import Blog from "../models/blog.js";
 
 
 export const getBlog = async (req, res) => {
-    let { topic } = req.params;
-    // topic.replace(/\s+/g, '-') = req.params
-    const slug = topic.split("-").join(" ")
+    let { title } = req.params;
+    const slug = title.split("-").join(" ")
     try {
-        const blog = await Blog.findOne({ topic: slug });
+        const blog = await Blog.findOne({ title: slug });
         console.log("get a single blog", blog)
         res.status(200).json(blog)
     } catch (error) {

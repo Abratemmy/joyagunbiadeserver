@@ -3,12 +3,12 @@ import mongoose from "mongoose";
 // const AutoIncrement = Inc(mongoose); 
 
 const blogSchema = mongoose.Schema({
-    number: String,
     title: String,
     image: String,
     podcast: String,
     content: String,
     excerpt: String,
+    publisher: String,
     createdAt: {
         type: Date,
         default: new Date()

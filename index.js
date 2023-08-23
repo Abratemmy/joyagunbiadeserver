@@ -6,6 +6,7 @@ import gesfeedback from "./routes/gesfeedback.js";
 import gwop from "./routes/gwops.js";
 import blog from "./routes/blog.js";
 import joyevent from "./routes/event.js"
+import gwopResources from './routes/gwopBook.js'
 import dotenv from "dotenv"
 
 
@@ -21,6 +22,7 @@ app.use('/gesfeedback', gesfeedback);
 app.use('/gwopfeedback', gwop);
 app.use('/blog', blog);
 app.use('/event', joyevent);
+app.use('/gwop_resources', gwopResources)
 
 app.get('/', (req, res) => {
     res.send("Hello Joy")

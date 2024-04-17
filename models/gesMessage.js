@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 import Inc from "mongoose-sequence";
-const AutoIncrement = Inc(mongoose); 
+const AutoIncrement = Inc(mongoose);
 
 const gesSchema = mongoose.Schema({
     testimony: String,
-    name:String,
-    image:String,
-    createdAt:{
-       type:Date,
-       default: new Date() 
+    name: String,
+    image: String,
+    createdAt: {
+        type: Date,
+        default: new Date()
     },
     // _id:Number
 });

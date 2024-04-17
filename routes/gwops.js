@@ -1,5 +1,5 @@
 import express from "express";
-import { getGwops, createGwop, updateGwop, deleteGwop} from "../controllers/gwops.js";
+import { getGwops, createGwop, updateGwop, deleteGwop } from "../controllers/gwops.js";
 
 const router = express.Router();
 

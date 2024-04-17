@@ -4,7 +4,7 @@ import { getGesFeedback, createGesFeedback, updateGesFeedback, deleteGesFeedback
 const router = express.Router();
 
 router.get('/', getGesFeedback);
-router.post('/',createGesFeedback);
+router.post('/', createGesFeedback);
 router.patch('/:id', updateGesFeedback);
 router.delete('/:id', deleteGesFeedback);
 
